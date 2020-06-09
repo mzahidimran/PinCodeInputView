@@ -13,7 +13,7 @@ public class PinCodeInputView<T: UIView & ItemType>: UIControl, UITextInputTrait
     
     // MARK: - Properties
     
-    private(set) public var text: String = "" {
+    public var text: String = "" {
         didSet {
             if let handler = changeTextHandler {
                 handler(text)
